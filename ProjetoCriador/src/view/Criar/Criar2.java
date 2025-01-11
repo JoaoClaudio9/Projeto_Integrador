@@ -235,9 +235,19 @@ public class Criar2 extends javax.swing.JFrame {
         getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 431, 233, 30));
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 467, 241, 30));
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 503, 241, 30));
 
         jTextField8.addActionListener(new java.awt.event.ActionListener() {
@@ -263,12 +273,27 @@ public class Criar2 extends javax.swing.JFrame {
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 631, 49, 50));
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--", "Treinado", "Veterano", "Expert" }));
+        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 220, 70, 20));
 
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--", "Treinado", "Veterano", "Expert" }));
+        jComboBox6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 240, 70, 20));
 
         jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--", "Treinado", "Veterano", "Expert" }));
+        jComboBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 260, 70, 20));
 
         jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--", "Treinado", "Veterano", "Expert" }));
@@ -602,11 +627,12 @@ public class Criar2 extends javax.swing.JFrame {
 
     private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jTextField10ActionPerformed
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
 
-        // TODO add your handling code here:
+        // ORIGENS
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
@@ -647,6 +673,26 @@ public class Criar2 extends javax.swing.JFrame {
     private void jTextField39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField39ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField39ActionPerformed
+
+    private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
+        // CLASSES
+    }//GEN-LAST:event_jComboBox3ActionPerformed
+
+    private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
+        //TRILHA
+    }//GEN-LAST:event_jComboBox4ActionPerformed
+
+    private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox5ActionPerformed
+
+    private void jComboBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox6ActionPerformed
+
+    private void jComboBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox7ActionPerformed
 
     
     public static void main(String args[]) {

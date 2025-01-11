@@ -73,8 +73,18 @@ public class menu extends javax.swing.JFrame {
         });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/2.png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/3.png"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/CONF.png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -118,7 +128,7 @@ public class menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-
+        
 // Exibindo o diálogo
     ImageIcon icone = new ImageIcon("C:\\Users\\Aluno\\Desktop\\imagens integrador\\botoes menu\\CONF.png");
     JOptionPane.showMessageDialog(
@@ -138,6 +148,24 @@ public class menu extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_proxima
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+      JOptionPane.showMessageDialog(
+        this, 
+        "Botão ilustrativo!", 
+        "AVISO!", 
+        JOptionPane.INFORMATION_MESSAGE
+        );
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+      JOptionPane.showMessageDialog(
+        this, 
+        "Botão ilustrativo!", 
+        "AVISO!", 
+        JOptionPane.INFORMATION_MESSAGE
+        );  
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     public static void main(String args[]) {
       
