@@ -66,21 +66,21 @@ public class Criar2 extends javax.swing.JFrame {
 
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        NEX = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
+        Pre = new javax.swing.JTextField();
+        Vig = new javax.swing.JTextField();
+        Agi = new javax.swing.JTextField();
+        Int = new javax.swing.JTextField();
+        For = new javax.swing.JTextField();
+        Origens = new javax.swing.JComboBox<>();
+        Classes = new javax.swing.JComboBox<>();
+        Trilhas = new javax.swing.JComboBox<>();
+        PV = new javax.swing.JTextField();
+        SAN = new javax.swing.JTextField();
+        pe = new javax.swing.JTextField();
+        DEF = new javax.swing.JTextField();
         jComboBox5 = new javax.swing.JComboBox<>();
         jComboBox6 = new javax.swing.JComboBox<>();
         jComboBox7 = new javax.swing.JComboBox<>();
@@ -183,14 +183,14 @@ public class Criar2 extends javax.swing.JFrame {
         });
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 85, 65, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "NEX%", "0%", "5%", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "95%", "99%", "!!??%", " " }));
-        jComboBox1.setPreferredSize(new java.awt.Dimension(60, 20));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        NEX.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "NEX%", "0%", "5%", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "95%", "99%", "!!??%", " " }));
+        NEX.setPreferredSize(new java.awt.Dimension(60, 20));
+        NEX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                NEXActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 86, 66, -1));
+        getContentPane().add(NEX, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 86, 66, -1));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Criar/info.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -207,70 +207,76 @@ public class Criar2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 302, 22, 24));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 332, 46, 46));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, 46, 46));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 156, 46, 45));
+        getContentPane().add(Pre, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 332, 46, 46));
+        getContentPane().add(Vig, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, 46, 46));
+        getContentPane().add(Agi, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 156, 46, 45));
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        Int.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                IntActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 220, 46, 46));
+        getContentPane().add(Int, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 220, 46, 46));
 
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        For.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                ForActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(311, 220, 46, 46));
+        getContentPane().add(For, new org.netbeans.lib.awtextra.AbsoluteConstraints(311, 220, 46, 46));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox2.setPreferredSize(new java.awt.Dimension(79, 22));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        Origens.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Origens.setPreferredSize(new java.awt.Dimension(79, 22));
+        Origens.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                OrigensActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 431, 233, 30));
+        getContentPane().add(Origens, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 431, 233, 30));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox3.addActionListener(new java.awt.event.ActionListener() {
+        Classes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Classes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox3ActionPerformed(evt);
+                ClassesActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 467, 241, 30));
+        getContentPane().add(Classes, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 467, 241, 30));
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox4.addActionListener(new java.awt.event.ActionListener() {
+        Trilhas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--", "Aniquilador - (Combatente)", "Comandante de Campo - (Combatente)", "Operações Especiais - (Combatente)", "Guerreiro - (Combatente)", "Tropa de Choque - (Combatente)", "Atirador de Elite - (Especialista)", "Infiltrador - (Especialista)", "Médico de Campo - (Especialista)", "Negociador - (Especialista)", "Técnico - (Especialista)", "Conduíte - (Ocultista)", "Flagelador - (Ocultista)", "Graduado - (Ocultista)", "Intuitivo - (Ocultista)", "Lâmina Paranormal - (Ocultista)" }));
+        Trilhas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox4ActionPerformed(evt);
+                TrilhasActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 503, 241, 30));
+        getContentPane().add(Trilhas, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 503, 241, 30));
 
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        PV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                PVActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 545, 57, 43));
+        getContentPane().add(PV, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 545, 57, 43));
 
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        SAN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                SANActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 546, 57, 40));
+        getContentPane().add(SAN, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 546, 57, 40));
 
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
+        pe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
+                peActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 622, 54, 42));
-        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 631, 49, 50));
+        getContentPane().add(pe, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 622, 54, 42));
+
+        DEF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DEFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(DEF, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 631, 49, 50));
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--", "Treinado", "Veterano", "Expert" }));
         jComboBox5.addActionListener(new java.awt.event.ActionListener() {
@@ -523,9 +529,9 @@ public class Criar2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void NEXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NEXActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_NEXActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         JOptionPane.showMessageDialog(
@@ -618,31 +624,65 @@ public class Criar2 extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    private void SANActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SANActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+        if (Classe == Combatente){
+            int san_base = 12;
+            int san_posterior = 3;
+        }
+        
+        if (Classe == Especialista){
+            int san_base = 16;
+            int san_posterior = 4;
+        }
+        
+        if (Classe == Ocultista){
+            int san_base = 20;
+            int san_posterior = 5;
+        }
+        
+    }//GEN-LAST:event_SANActionPerformed
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
+    private void PVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PVActionPerformed
+       
+        int pv_base;
+        int pv_posterior;
+        
+        if (Classe == Combatente){
+            pv_base = 20 + Vig;
+            pv_posterior = 4 + Vig;
+        }
+        
+        if (Classe == Especialista){
+            pv_base = 16 + Vig;
+            pv_posterior = 3 + Vig;
+        }
+        
+        if (Classe == Ocultista){
+            pv_base = 12 + Vig;
+            pv_posterior = 2 + Vig;
+        }
+             
+    }//GEN-LAST:event_PVActionPerformed
+
+    private void peActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_peActionPerformed
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_jTextField10ActionPerformed
+    }//GEN-LAST:event_peActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void OrigensActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrigensActionPerformed
 
         // ORIGENS
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+    }//GEN-LAST:event_OrigensActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void IntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IntActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_IntActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void ForActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ForActionPerformed
 
         
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_ForActionPerformed
 
     private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
         // TODO add your handling code here:
@@ -674,13 +714,13 @@ public class Criar2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField39ActionPerformed
 
-    private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
+    private void ClassesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClassesActionPerformed
         // CLASSES
-    }//GEN-LAST:event_jComboBox3ActionPerformed
+    }//GEN-LAST:event_ClassesActionPerformed
 
-    private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
+    private void TrilhasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TrilhasActionPerformed
         //TRILHA
-    }//GEN-LAST:event_jComboBox4ActionPerformed
+    }//GEN-LAST:event_TrilhasActionPerformed
 
     private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
         // TODO add your handling code here:
@@ -694,6 +734,12 @@ public class Criar2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox7ActionPerformed
 
+    private void DEFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DEFActionPerformed
+       
+        DEF = 10 + Agi + 5;
+        
+    }//GEN-LAST:event_DEFActionPerformed
+
     
     public static void main(String args[]) {
         SwingUtilities.invokeLater(() -> {
@@ -704,10 +750,21 @@ public class Criar2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField Agi;
+    private javax.swing.JComboBox<String> Classes;
+    private javax.swing.JTextField DEF;
+    private javax.swing.JTextField For;
+    private javax.swing.JTextField Int;
+    private javax.swing.JComboBox<String> NEX;
+    private javax.swing.JComboBox<String> Origens;
+    private javax.swing.JTextField PV;
+    private javax.swing.JTextField Pre;
+    private javax.swing.JTextField SAN;
+    private javax.swing.JComboBox<String> Trilhas;
+    private javax.swing.JTextField Vig;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox11;
     private javax.swing.JComboBox<String> jComboBox12;
@@ -718,7 +775,6 @@ public class Criar2 extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox17;
     private javax.swing.JComboBox<String> jComboBox18;
     private javax.swing.JComboBox<String> jComboBox19;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox20;
     private javax.swing.JComboBox<String> jComboBox21;
     private javax.swing.JComboBox<String> jComboBox22;
@@ -729,17 +785,13 @@ public class Criar2 extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox27;
     private javax.swing.JComboBox<String> jComboBox28;
     private javax.swing.JComboBox<String> jComboBox29;
-    private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox30;
-    private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
@@ -759,7 +811,6 @@ public class Criar2 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField27;
     private javax.swing.JTextField jTextField28;
     private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField30;
     private javax.swing.JTextField jTextField31;
     private javax.swing.JTextField jTextField32;
@@ -770,7 +821,6 @@ public class Criar2 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField37;
     private javax.swing.JTextField jTextField38;
     private javax.swing.JTextField jTextField39;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField40;
     private javax.swing.JTextField jTextField41;
     private javax.swing.JTextField jTextField42;
@@ -781,7 +831,6 @@ public class Criar2 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField47;
     private javax.swing.JTextField jTextField48;
     private javax.swing.JTextField jTextField49;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField50;
     private javax.swing.JTextField jTextField51;
     private javax.swing.JTextField jTextField52;
@@ -792,7 +841,6 @@ public class Criar2 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField57;
     private javax.swing.JTextField jTextField58;
     private javax.swing.JTextField jTextField59;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField60;
     private javax.swing.JTextField jTextField61;
     private javax.swing.JTextField jTextField62;
@@ -802,8 +850,6 @@ public class Criar2 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField66;
     private javax.swing.JTextField jTextField67;
     private javax.swing.JTextField jTextField68;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField pe;
     // End of variables declaration//GEN-END:variables
 }
